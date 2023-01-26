@@ -5,11 +5,12 @@ pipeline {
 	
 		string(name: 'name', defaultValue: 'Nikhil', description: 'Enter your name')
 	}
-  
 	stages {
 	
 		stage(sample) {
-			echo 'name is $name'
+			steps{
+				echo 'name is $name'
+			}
 		}
 	}
 }
