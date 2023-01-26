@@ -9,7 +9,7 @@ pipeline {
 	
 		stage(sample) {
 			steps{
-				echo 'name is $name'
+				echo "name is $name"
 			}
 		}
 	}
