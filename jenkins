@@ -1,0 +1,15 @@
+pipeline {
+
+	agent any
+	parameters{
+	
+		string(name: 'name', defaultValue: 'Nikhil', description: 'Enter your name')
+	}
+  
+	stages {
+	
+		stage(sample) {
+			echo 'name is $name'
+		}
+	}
+}
